@@ -1,121 +1,166 @@
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
-  position: relative;
   box-sizing: border-box;
-  width: 1440px;
-  height: 1144px;
   background: #fff;
   margin: 0;
   padding: 0;
   color: #333;
-  min-height: 100vh;
+}
+
+div,
+p,
+button,
+form,
+span,
+a,
+ul,
+li {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 .header {
-  position: absolute;
+  padding: 32px 0;
+}
+
+.container {
   width: 1180px;
-  height: 40px;
-  left: 130px;
-  top: 32px;
+  margin: 0 auto;
 }
 
-.tabs {
-  position: absolute;
-  width: 311px;
-  height: 42px;
-  left: 565px;
-  top: 116px;
-}
-
-.wrapper-movies {
-  position: absolute;
+.header-top {
   display: flex;
-  width: 1180px;
-  height: 478px;
+  justify-content: space-between;
+  margin-bottom: 48px;
 }
 
-.new {
-  position: absolute;
-  width: 134px;
-  height: 28px;
-  left: 130px;
-  top: 190px;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: right;
+.header-bot {
+  display: flex;
+  justify-content: center;
+}
+
+.button-tab {
+  border: none;
+  background-color: #fff;
+  color: #333;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  cursor: pointer;
+  outline: none;
+}
+
+.video-service {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  padding-left: 46px;
+  padding-top: 8px;
+  background: url(../assets/sign.png) no-repeat left;
+}
+
+.search {
+  width: 402px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 60px;
+  outline: none;
+}
+
+.search-input {
+  width: 315px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  border: 1px solid #333333;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 16px;
+  padding-top: 12px;
+  outline: none;
+}
+
+.search-button {
+  border: none;
+  background-color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  height: 19px;
+  padding-left: 0;
+  color: #e5261e;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-button {
+  border: none;
+  background: #e5261e;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 113px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  outline: none;
+}
+
+.login-button:hover {
+  background: #cc221b;
+  transition: 0.5s;
+}
+
+.container-header {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.movie {
+  display: flex;
+  justify-content: space-between;
 }
 
 .movie1 {
-  position: absolute;
   width: 280px;
-  height: 434px;
-  left: 130px;
-  top: 234px;
+  font-size: 20px;
 }
 
-.movie2 {
-  position: absolute;
-  width: 280px;
-  height: 434px;
-  left: 430px;
-  top: 234px;
-}
-
-.movie3 {
-  position: absolute;
-  width: 280px;
-  height: 434px;
-  left: 730px;
-  top: 234px;
-}
-
-.movie4 {
-  position: absolute;
-  width: 280px;
-  height: 434px;
-  left: 1030px;
-  top: 234px;
-}
-
-.wrapper-genres {
-  position: absolute;
-  box-sizing: border-box;
-  top: 700px;
-  width: 1180px;
-  height: 252px;
-}
-
-.genres {
-  position: absolute;
-  width: 87px;
-  height: 28px;
-  left: 130px;
-  top: 700px;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: right;
+.movie1 p {
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 32px;
 }
 
 .genre1 {
-  position: absolute;
-  box-sizing: border-box;
   width: 280px;
   height: 208px;
-  left: 130px;
-  top: 744px;
   background: linear-gradient(127.83deg, #f2c94c 8.44%, #f29a4a 91.36%);
+  opacity: 0.8;
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
 }
 
 .genre2 {
-  position: absolute;
-  box-sizing: border-box;
   width: 280px;
   height: 208px;
-  left: 430px;
-  top: 744px;
   background: linear-gradient(127.83deg, #f2994a 8.44%, #eb5757 91.36%);
   opacity: 0.8;
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
@@ -123,12 +168,8 @@ body {
 }
 
 .genre3 {
-  position: absolute;
-  box-sizing: border-box;
   width: 280px;
   height: 208px;
-  left: 730px;
-  top: 744px;
   background: linear-gradient(127.83deg, #56ccf2 8.44%, #2f80ed 91.36%);
   opacity: 0.8;
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
@@ -136,52 +177,112 @@ body {
 }
 
 .genre4 {
-  position: absolute;
-  box-sizing: border-box;
   width: 280px;
   height: 208px;
-  left: 1030px;
-  top: 744px;
   background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
   opacity: 0.8;
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
 }
 
+.movies {
+  display: block;
+}
+
+.movies-toggle {
+  display: none;
+}
+
 .television {
   display: none;
 }
 
+.television-toggle {
+  display: block;
+}
+
+.channel {
+  background: #f2f2f2;
+  border-radius: 8px;
+  display: flex;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.img-wrap {
+  width: 400px;
+  position: relative;
+}
+
+.img-wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.channel-name {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.channel-content {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 12px 0;
+}
+
+.channel-content li {
+  padding: 6px 0;
+}
+
+.channel-content li:first-of-type {
+  color: #e5261e;
+}
+
+.channel-content time {
+  margin-right: 16px;
+}
+
+.genre-text {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+.img {
+  margin-top: 80px;
+  margin-bottom: 32px;
+  margin-left: 116px;
+  margin-right: 116px;
+}
+
 .footer {
-  position: absolute;
-  width: 1440px;
-  height: 120px;
-  left: 0px;
-  top: 1024px;
+  background: #f2f2f2;
+  margin-top: 72px;
+  padding-top: 16px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
 }
 
-.address {
-  position: absolute;
-  width: 940px;
-  height: 19px;
-  left: 202px;
-  top: 22px;
-}
-
-.telephone {
-  position: absolute;
-  width: 940px;
-  height: 19px;
-  left: 202px;
-  top: 47px;
+.content {
+  padding: 0;
+  margin: 0.3em 0 0.3em 72px;
 }
 
 .site {
-  position: absolute;
-  width: 940px;
-  height: 19px;
-  left: 202px;
-  top: 76px;
   font-weight: 500;
   color: #1f4766;
+  margin-left: 72px;
+  line-height: 2em;
+}
+
+.logo-img {
+  display: block;
+  position: absolute;
+  padding-top: 7px;
 }

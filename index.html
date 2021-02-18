@@ -14,93 +14,172 @@
   </head>
   <body>
     <header class="header">
-      <div class="container1">
-        <h1 class="video-service">Видеосервис</h1>
-        <input type="text" class="search" placeholder="Поиск..." />
-        <button type="submit" class="search-button">Найти</button>
-        <button class="login-form" type="button">Войти</button>
+      <div class="container">
+        <div class="header-top">
+          <h1 class="video-service">Видеосервис</h1>
+          <div class="search">
+            <input type="text" class="search-input" placeholder="Поиск..." />
+            <button type="submit" class="search-button">Найти</button>
+          </div>
+          <button type="button" class="login-button">Войти</button>
+        </div>
+      </div>
+      <div class="header-bot">
+        <div class="tabs">
+          <button type="button" class="button-tab" id="button-tab1">
+            Фильмы
+          </button>
+          <button type="button" class="button-tab" id="button-tab2">
+            Телеканалы
+          </button>
+        </div>
       </div>
     </header>
-    <div class="tabs">
-      <div class="tab-wrapper">
-        <button type="button">Фильмы</button>
-        <button type="button">Телеканалы</button>
-      </div>
-    </div>
     <section class="movies">
-      <div class="wrapper-movies">
-        <h2 class="new">Новинки</h2>
-        <div class="movie1">Мульт в кино. Выпуск №103. Некогда грустить!</div>
-        <div class="movie2">Новый Бэтмен</div>
-        <div class="movie3">Однажды... в Голливуде</div>
-        <div class="movie4">Стриптизёрши</div>
+      <div class="container">
+        <h2 class="container-header">🔥 Новинки</h2>
+        <div class="movie">
+          <div class="movie1">
+            <a href="#">
+              <img src="assets/kitten.png" alt="kitten" />
+              <p>Мульт в кино. Выпуск №103. Некогда грустить!</p></a
+            >
+          </div>
+          <div class="movie1">
+            <a href="#">
+              <img src="assets/batman.png" alt="batman" />
+              <p>Новый Бэтмен</p></a
+            >
+          </div>
+          <div class="movie1">
+            <a href="#">
+              <img src="assets/hollywood.png" alt="hollywood" />
+              <p>Однажды... в Голливуде</p></a
+            >
+          </div>
+          <div class="movie1">
+            <a href="#">
+              <img src="assets/girl.png" alt="girl" />
+              <p>Стриптизёрши</p></a
+            >
+          </div>
+        </div>
       </div>
-      <div class="wrapper-genres">
-        <h2 class="genres">Жанры</h2>
-        <div class="genre1">Комедии</div>
-        <div class="genre2">Драмы</div>
-        <div class="genre3">Фантастика</div>
-        <div class="genre4">Ужасы</div>
+      <div class="container">
+        <h2 class="container-header">Жанры</h2>
+        <div class="movie">
+          <div class="genre1">
+            <a href="#">
+              <img src="assets/😁.png" alt="smile" class="img" />
+              <p class="genre-text">Комедии</p></a
+            >
+          </div>
+          <div class="genre2">
+            <a href="#">
+              <img src="assets/😭.png" alt="smile" class="img" />
+              <p class="genre-text">Драмы</p></a
+            >
+          </div>
+          <div class="genre3">
+            <a href="#">
+              <img src="assets/👽.png" alt="smile" class="img" />
+              <p class="genre-text">Фантастика</p></a
+            >
+          </div>
+          <div class="genre4">
+            <a href="#">
+              <img src="assets/👻.png" alt="smile" class="img" />
+              <p class="genre-text">Ужасы</p>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="television">
-      <div class="wrapper-channels">
-        <div class="channel">
-          <div class="channel1">
-            <h3 class="channel-name">Первый канал</h3>
-            <ul class="channel-content">
-              <li><time>13:00</time>Новости (с субтитрами)</li>
-              <li><time>14:00</time>Давай поженимся</li>
-              <li><time>15:00</time>Другие новости</li>
-            </ul>
+      <div class="container">
+        <div class="channels">
+          <div class="channel channel1">
+            <div class="img-wrap">
+              <img src="assets/1st.png" alt="1st" />
+            </div>
+            <div class="wrapper">
+              <h3 class="channel-name">Первый канал</h3>
+              <ul class="channel-content">
+                <li><time>13:00</time>Новости (с субтитрами)</li>
+                <li><time>14:00</time>Давай поженимся</li>
+                <li><time>15:00</time>Другие новости</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="channel">
-          <div class="channel1">
-            <h3 class="channel-name">2x2</h3>
-            <ul class="channel-content">
-              <li><time>13:00</time>МУЛЬТ ТВ. Сезон 4, 7 серия</li>
-              <li><time>14:00</time>ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</li>
-              <li><time>15:00</time>БУРДАШЕВ. Сезон 1, 20 серия</li>
-            </ul>
+        <div class="channels">
+          <div class="channel channel2">
+            <div class="img-wrap">
+              <img src="assets/2x2.png" alt="2x2" />
+            </div>
+            <div class="wrapper">
+              <h3 class="channel-name">2x2</h3>
+              <ul class="channel-content">
+                <li><time>13:00</time>МУЛЬТ ТВ. Сезон 4, 7 серия</li>
+                <li><time>14:00</time>ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</li>
+                <li><time>15:00</time>БУРДАШЕВ. Сезон 1, 20 серия</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="channel">
-          <div class="channel1">
-            <h3 class="channel-name">РБК</h3>
-            <ul class="channel-content">
-              <li>
-                <time>13:00</time>ДЕНЬ. Горючая смесь: как бороться с суррогатом
-                на АЗС
-              </li>
-              <li><time>14:00</time>ДЕНЬ. Главные темы</li>
-              <li><time>15:00</time>Главные новости</li>
-            </ul>
+        <div class="channels">
+          <div class="channel channel3">
+            <div class="img-wrap">
+              <img src="assets/rbc.png" alt="rbc" />
+            </div>
+            <div class="wrapper">
+              <h3 class="channel-name">РБК</h3>
+              <ul class="channel-content">
+                <li>
+                  <time>13:00</time>ДЕНЬ. Горючая смесь: как бороться с
+                  суррогатом на АЗС
+                </li>
+                <li><time>14:00</time>ДЕНЬ. Главные темы</li>
+                <li><time>15:00</time>Главные новости</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="channel">
-          <div class="channel1">
-            <h3 class="channel-name">AMEDIA PREMIUM</h3>
-            <ul class="channel-content">
-              <li><time>13:00</time>Клиент всегда мёртв</li>
-              <li>
-                <time>14:00</time>Голодные игры: Сойка-пересмешница. Часть I
-              </li>
-              <li><time>15:00</time>Секс в большом городе</li>
-            </ul>
+        <div class="channels">
+          <div class="channel channel4">
+            <div class="img-wrap">
+              <img src="assets/amedia.png" alt="amedia" />
+            </div>
+            <div class="wrapper">
+              <h3 class="channel-name">AMEDIA PREMIUM</h3>
+              <ul class="channel-content">
+                <li><time>13:00</time>Клиент всегда мёртв</li>
+                <li>
+                  <time>14:00</time>Голодные игры: Сойка-пересмешница. Часть I
+                </li>
+                <li><time>15:00</time>Секс в большом городе</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="footer">
-        <p class="address">
-          426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса,
-          246 (ДК «Металлург»)
-        </p>
-        <p class="telephone">+7 (3412) 93-88-61, 43-29-29</p>
-        <p class="site"><a href="https://htc-cs.ru">htc-cs.ru</a></p>
+      <div class="container">
+        <a href="#">
+          <img src="assets/htc-cs-logo.png" alt="logohtc" class="logo-img"
+        /></a>
+        <div class="content-footer">
+          <p class="content">
+            426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса,
+            246 (ДК «Металлург»)
+          </p>
+          <p class="content">+7 (3412) 93-88-61, 43-29-29</p>
+
+          <a href="https://htc-cs.ru" target="_blank" class="site">htc-cs.ru</a>
+        </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
