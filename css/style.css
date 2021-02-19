@@ -2,6 +2,7 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   box-sizing: border-box;
+  position: relative;
   background: #fff;
   margin: 0;
   padding: 0;
@@ -53,15 +54,38 @@ h6 {
   justify-content: center;
 }
 
+.tabs {
+  width: 311px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .button-tab {
   border: none;
   background-color: #fff;
   color: #333;
+  padding: 0 0 6px 0;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 28px;
   cursor: pointer;
   outline: none;
+}
+
+.button-tab1_style {
+  color: #e5261e;
+  border: 2px solid #e5261e;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.button-tab2_style {
+  color: #e5261e;
+  border: 2px solid #e5261e;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .video-service {
@@ -94,6 +118,76 @@ h6 {
   padding-bottom: 16px;
   padding-top: 12px;
   outline: none;
+}
+
+.login-form-off {
+  display: none;
+}
+
+.login {
+  background: #fff;
+  border-radius: 8px;
+  width: 305px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  -moz-box-shadow: 0 0 9000px 9000px rgba(7, 7, 7, 0.5);
+  -webkit-box-shadow: 0 0 9000px 9000px rgba(7, 7, 7, 0.5);
+  box-shadow: 0 0 9000px 9000px rgba(7, 7, 7, 0.5);
+}
+
+.login-input {
+  width: 232px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  border: 1px solid #333333;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 4px;
+  padding-top: 0;
+  margin: 12px 36px;
+  outline: none;
+}
+
+.login-header {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 26px 117px 10px 117px;
+}
+
+.login-input__check {
+  margin-left: 32px;
+}
+
+.login-input__check input {
+  margin-right: 8px;
+  border: 1px solid #333;
+  -ms-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.login-input__check span {
+  margin: 6px 0;
+  display: inline-block;
+}
+
+.login-btn {
+  margin: 111px 95px 36px 95px;
+}
+
+.login-close-btn {
+  text-align: right;
+  margin-top: 8px;
+  margin-right: 12px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .search-button {
